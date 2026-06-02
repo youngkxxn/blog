@@ -1,0 +1,106 @@
+/* Work_common */
+/* 작품이 정사각형 이미지 파일일 때 사용 */
+.Work .title { 
+  margin: -80px 100px 0;
+  height: 220px; /* Title 높이 250 */
+  /* background-color: orange; */
+  /* border : solid red 3px; */
+}
+.Work .container {
+  /* border: solid pink 3px; */
+  /* background-color: royalblue; */
+  margin: 0 100px;
+}
+.Work .container .works {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  /* background-color: tomato; */
+  max-width: 1980px;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+.Work .container .works .work {
+  /* 작품(work) 크기 600 x 750px */
+  width: 600px;
+  height: 750px;
+  overflow: visible;
+  border: 2px solid #666;
+  box-sizing: border-box;
+  text-align: center;
+}
+.Work .container .works .work .txt {
+  position: absolute;
+  min-width: 950px;
+  margin-left: -475px;
+  margin-top: 754px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  /* border: solid pink 3px; */
+}
+.Work .container .content {
+  position: relative;
+  text-align: left;
+  width: 1200px;
+  margin : 50px auto 50px;
+  /* background-color: aquamarine; */
+  /* border: solid purple 3px; */
+  font-size: 16px;
+}
+.Work .container .content .b {
+  font-weight: 600;
+}
+.Work .container .works .work .image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+.Work .container .works .work:nth-child(1) .image { background-image: url("../images/2021/04_01.png"); }
+.Work .container .works .work:nth-child(2) .image { background-image: url("../images/2021/04_02.png"); }
+
+.Work .container .gif {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: tomato; */
+  max-width: 1980px;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+.Work .container .content2 {
+  position: relative;
+  text-align: left;
+  width: 1200px;
+  margin : 50px auto 200px;
+  font-size: 16px;
+}
+.Work .container .gif .gifplay {
+  /* 작품(work) 크기 580 x 580px */
+  width: 580px;
+  height: 580px;
+  overflow: visible;
+  border: 2px solid #666;
+  box-sizing: border-box;
+  text-align: center;
+}
+.Work .container .gif .gifplay .image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+.Work .container .gif .gifplay:nth-child(1) .image { background-image: url("../images/2021/04.gif"); }
+
+.Work .container .info {
+  background-color: #272727;
+  padding: 60px 0 60px 0;
+  margin-top: 20px;
+  width: calc(100vw - .5%);
+  margin-left: calc(-50vw + 50%);
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+}

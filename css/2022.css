@@ -1,0 +1,94 @@
+/* 2022Work */
+.Work2022 .title { 
+  margin: 150px 100px 0;
+  height: 220px; /* Title 높이 250 */
+  /* background-color: orange; */
+  /* border : solid red 3px; */
+}
+.Work2022 .container {
+  /* border: solid pink 3px; */
+  /* height: 400px; */
+  /* background-color: royalblue; */
+  margin: 0 100px;
+}
+.Work2022 .container .works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: tomato; */
+  max-width: 1980px;
+  min-width: 340px;
+  margin: 0 auto 150px;
+  padding: 40px 20px;
+}
+.Work2022 .container .works .work {
+  /* work 썸네일 크기 300 x 300px */
+  width: 300px;
+  height: 300px;
+  margin: 35px 18px;
+  /* background-color: #fff; */
+  overflow: visible;
+  border: 2px solid #666;
+  box-sizing: border-box;
+  transition: .3s;
+  text-align: center;
+}
+.Work2022 .container .works .work:hover {
+  transform: scale(1.05);
+}
+.Work2022 .container .works .work .txt {
+  position: absolute;
+  margin-left: -150px;
+  margin-top: 300px;
+  color: #000;
+  /* text-shadow: -1px 0 #c7f4da, 0 1px #c7f4da, 1px 0 #c7f4da, 0 -1px #c7f4da; */
+  font-size: 16px;
+  width : 300px;
+  text-align: center;
+  font-weight: 600;
+  /* border: solid pink 3px; */
+}
+.Work2022 .container .works .work:hover .txt {
+  color: #000;
+  /* text-shadow: -1px 0 #bcdb22, 0 1px #bcdb22, 1px 0 #bcdb22, 0 -1px #bcdb22; */
+  font-size: 16px;
+  font-weight: 600;
+}
+.Work2022 .container .works .work .image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+.Work2022 .container .works .work:nth-child(1) .image { background-image: url("../images/2022/01_300.png"); }
+.Work2022 .container .works .work:nth-child(2) .image { background-image: url("../images/2022/02_300.png"); }
+.Work2022 .container .works .work:nth-child(3) .image { background-image: url("../images/2022/03_300.png"); }
+.Work2022 .container .works .work:nth-child(4) .image { background-image: url("../images/2022/04_300.png"); }
+.Work2022 .container .works .work:nth-child(5) .image { background-image: url("../images/2022/05_300.png"); }
+.Work2022 .container .works .work:nth-child(6) .image { background-image: url("../images/2022/06_300.png"); }
+.Work2022 .container .works .work:nth-child(7) .image { background-image: url("../images/2022/07_300.png"); }
+.Work2022 .container .works .work:nth-child(8) .image { background-image: url("../images/2022/08_300.png"); }
+.Work2022 .container .works .work:nth-child(9) .image { background-image: url("../images/2022/09_300.png"); }
+.Work2022 .container .works .work:nth-child(10) .image { background-image: url("../images/2022/10_300.png"); }
+.Work2022 .container .works .work:nth-child(11) .image { background-image: url("../images/2022/11_300.png"); }
+.Work2022 .container .works .work:nth-child(12) .image { background-image: url("../images/2022/12_300.png"); }
+.Work2022 .container .works .work:nth-child(13) .image { background-image: url("../images/2022/13_300.png"); }
+.Work2022 .container .works .work:nth-child(14) .image { background-image: url("../images/2022/14_300.png"); }
+.Work2022 .container .works .work:nth-child(15) .image { background-image: url("../images/2022/15_300.png"); }
+.Work2022 .container .works .work:nth-child(16) .image { background-image: url("../images/2022/16_300.png"); }
+.Work2022 .container .works .work:nth-child(17) .image { background-image: url("../images/2022/17_300.png"); }
+.Work2022 .container .works .work:nth-child(18) .image { background-image: url("../images/2022/18_300.png"); }
+.Work2022 .container .works .work:nth-child(19) .image { background-image: url("../images/2022/19_300.png"); }
+.Work2022 .container .works .work:nth-child(20) .image { background-image: url("../images/2022/20_300.png"); }
+.Work2022 .container .works .work:nth-child(21) .image { background-image: url("../images/2022/21_300.png"); }
+.Work2022 .container .works .work:nth-child(22) .image { background-image: url("../images/2022/22_300.png"); }
+
+.Work2022 .container .info {
+  background-color: #272727;
+  padding: 60px 0 60px 0;
+  margin-top: 20px;
+  width: calc(100vw - .5%);
+  margin-left: calc(-50vw + 50%);
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+}

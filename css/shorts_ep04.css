@@ -1,0 +1,69 @@
+/* Episode */
+.Episode .Ep__area {
+  height: 17950px;
+  background-color: #f6f5f0;
+}
+.Episode .Ep__area .id {
+  position: relative;
+  padding-top: 200px;
+  margin: 0 390px;
+  height: 30px;
+  min-width: 547px;
+  text-align: right;
+  background-color: #f6f5f0;
+}
+.Episode .Ep__area .Ep__content {
+  position: relative;
+  background-color: #000;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.Episode .Ep__area .Ep__content .story1 {
+  position: relative;
+  width: 600px;
+  height: 2176px;
+  left: 50%;
+  margin-left: -300px;
+}
+.Episode .Ep__area .Ep__content .story2 {
+  position: relative;
+  width: 600px;
+  height: 2247px;
+  left: 50%;
+  margin-left: -300px;
+}
+.Episode .Ep__area .Ep__content .story3 {
+  position: relative;
+  width: 600px;
+  height: 1695px;
+  left: 50%;
+  margin-left: -300px;
+}
+.Episode .Ep__area .Ep__content .story4 {
+  position: relative;
+  width: 600px;
+  height: 1838px;
+  left: 50%;
+  margin-left: -300px;
+}
+.Episode .Ep__area .Ep__content .story5 {
+  position: relative;
+  width: 600px;
+  height: 2857px;
+  left: 50%;
+  margin-left: -300px;
+}
+.Episode .Ep__area .Ep__content .story6 {
+  position: relative;
+  width: 600px;
+  height: 3662px;
+  left: 50%;
+  margin-left: -300px;
+}
+.Episode .Ep__area .Ep__content .story7 {
+  position: relative;
+  width: 600px;
+  height: 3162px;
+  left: 50%;
+  margin-left: -300px;
+}

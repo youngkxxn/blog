@@ -1,0 +1,137 @@
+/* YOUTUBE WORK */
+/* 유튜브에서 영상을 가져올 때 사용 */
+.youtubework {
+  
+}
+.youtubework .title { 
+  margin: -80px 100px 0;
+  height: 220px; /* Title 높이 250 */
+  /* background-color: orange; */
+  /* border : solid red 3px; */
+}
+.youtubework .container {
+  /* border: solid pink 3px; */
+  /* background-color: royalblue; */
+  margin: 0 100px;
+}
+.youtubework .container .youtube__area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1920px;
+  min-width: 950px;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+.youtubework .container .youtube__area .work {
+  /* 작품(work) 크기 750 x 750px */
+  width: 750px;
+  height: 750px;
+  /* background-color: pink; */
+  /* border : solid palegreen 2px; */
+  overflow: visible;
+  /* border: 1px solid #666; */
+  box-sizing: border-box;
+  text-align: center;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.youtubework .container .youtube__area .work .txt {
+  position: absolute;
+  width: 750px;
+  margin-top: 754px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  /* border: solid red 2px; */
+}
+.youtubework .container .content {
+  position: relative;
+  text-align: right;
+  /* 너비 : 작품너비 + 200px */
+  width: 950px;
+  margin : 100px auto 0px;
+  font-size: 16px;
+}
+.youtubework .container .content .green {
+  color : green;
+}
+.youtubework .Ep__area .works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: tomato; */
+  max-width: 1980px;
+  min-width: 950px;
+  margin: 0 auto;
+  padding: 45px 0px;
+}
+.youtubework .Ep__area .works .work1 {
+  /* 작품(work) 크기 390 x 650px */
+  width: 390px;
+  height: 650px;
+  overflow: hidden;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  text-align: center;
+}
+.youtubework .Ep__area .works .txt1 {
+  position: absolute;
+  min-width: 390px;
+  margin-left: calc (390 / 2)px;
+  margin-top: 654px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+  /* border: solid pink 3px; */
+}
+.youtubework .Ep__area .works .work2 {
+  /* 작품(work) 크기 318 x 431px */
+  width: 318px;
+  height: 431px;
+  overflow: hidden;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  text-align: center;
+}
+.youtubework .Ep__area .works .txt2 {
+  position: absolute;
+  min-width: 318px;
+  margin-left: calc (318 / 2)px;
+  margin-top: 435px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+  /* border: solid pink 3px; */
+}
+.youtubework .container .content2 {
+  position: relative;
+  text-align: right;
+  /* 너비 : 작품너비 + 200px */
+  width: 950px;
+  margin : 100px auto 200px;
+  font-size: 16px;
+}
+.youtubework .container .content2 .orange {
+  color: orange;
+  font-weight: 800;
+}
+.youtubework .container .info {
+  background-color: #272727;
+  padding: 60px 0 60px 0;
+  margin-top: 20px;
+  width: calc(100vw - .5%);
+  margin-left: calc(-50vw + 50%);
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+}

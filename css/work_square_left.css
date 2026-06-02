@@ -1,0 +1,98 @@
+/* Episode */
+.Episode .Ep__area {
+  height: 1050px;
+  background-color: #f6f5f0;
+}
+.Episode .Ep__area .id {
+  position: relative;
+  padding-top: 135px;
+  /* background-color: royalblue; */
+} 
+.Episode .Ep__area .works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: tomato; */
+  max-width: 1980px;
+  min-width: 950px;
+  margin: 0 auto;
+  padding: 45px 0px;
+}
+.Episode .Ep__area .works .work {
+  /* 작품(work) 크기 750 x 750px */
+  width: 750px;
+  height: 750px;
+  overflow: hidden;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  text-align: center;
+}
+.Episode .Ep__area .works .txt {
+  position: absolute;
+  min-width: 750px;
+  margin-left: calc (750 / 2)px;
+  margin-top: 754px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+  /* border: solid pink 3px; */
+}
+.Episode .content {
+  position: relative;
+  text-align: left;
+  /* 너비 = 작품크기 + 200px */
+  width: 950px;
+  margin : 0 auto 200px;
+  /* background-color: aquamarine; */
+  /* border: solid purple 3px; */
+  font-size: 16px;
+}
+.Episode .youtube__area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1980px;
+  min-width: 1147px;
+  margin: 0 auto 100px;
+  padding: 40px 0px;
+}
+.Episode .youtube__area .work {
+  /* 작품(work) 크기 734 x 798px */
+  width: 734px;
+  height: 798px;
+  /* background-color: pink; */
+  /* border : solid palegreen 2px; */
+  overflow: visible;
+  /* border: 1px solid #666; */
+  box-sizing: border-box;
+  text-align: center;
+}
+.Episode .youtube__area .work .txt {
+  position: absolute;
+  min-width: 734px;
+  margin-left: calc (734 / 2)px;
+  margin-top: 800px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+  /* border: solid pink 3px; */
+}
+.Episode .content2 {
+  position: relative;
+  text-align: left;
+  width: 950px;
+  margin : 0 auto 200px;
+  /* background-color: aquamarine; */
+  /* border: solid purple 3px; */
+  font-size: 16px;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}

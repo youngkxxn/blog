@@ -1,0 +1,73 @@
+/* Shorts */
+.shorts .title { 
+  margin: 155px auto 0;
+  height: 300px; /* 헤더 높이 250, 타이틀이미지 1500x300 */
+  width: 1500px;
+  /* border : solid red 3px; */
+}
+.shorts .container {
+  /* border: solid pink 3px; */
+  /* background-color: royalblue; */
+  margin: 0 200px;
+}
+.shorts .container .works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: tomato; */
+  max-width: 1500px;
+  min-width: 540px;
+  margin: 0 auto 100px;
+  padding: 40px 0px;
+}
+.shorts .container .works .work {
+  /* 이미지사이즈 */
+  width: 500px;
+  height: 250px;
+  margin: 40px;
+  /* background-color: #fff; */
+  overflow: hidden;
+  border: 2px solid #666;
+  border-radius: 20px;
+  box-sizing: border-box;
+  /* transition: .3s; */
+  text-align: center;
+  opacity: 0.8;
+}
+.shorts .container .works .work:hover {
+  opacity: 1;
+}
+.shorts .container .works .work .txt {
+  position: absolute;
+  text-align: center;
+  margin-left: -250px;
+  width: 500px;
+  margin-top: 250px;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+.shorts .container .works .work:hover .txt {
+  color: rgba(0, 0, 0, 0.8);
+}
+.shorts .container .works .work .image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+.shorts .container .works .work:nth-child(1) .image { background-image: url("../images/shorts/thumb04.png"); }
+.shorts .container .works .work:nth-child(2) .image { background-image: url("../images/shorts/thumb03.png"); }
+.shorts .container .works .work:nth-child(3) .image { background-image: url("../images/shorts/thumb02.png"); }
+.shorts .container .works .work:nth-child(4) .image { background-image: url("../images/shorts/thumb01.png"); }
+/* .shorts .container .works .work:nth-child(5) .image { background-image: url("../images/2020/test2.png"); } */
+
+.shorts .container .info {
+  background-color: #272727;
+  padding: 60px 0 60px 0;
+  margin-top: 20px;
+  width: calc(100vw - .5%);
+  margin-left: calc(-50vw + 50%);
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+}

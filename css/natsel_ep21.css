@@ -1,0 +1,97 @@
+/* Episode */
+.Episode {
+}
+.Episode .Ep__area {
+  height: 29980px;
+  background-color: #f6f5f0;
+}
+.Episode .Ep__area .id {
+  position: relative;
+  padding-top: 200px;
+  margin: 0 390px;
+  height: 30px;
+  min-width: 547px;
+  text-align: right;
+  background-color: #f6f5f0;
+}
+.Episode .Ep__area .Ep__content {
+  position: relative;
+  background-color: #ffffff;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.Episode .Ep__area .Ep__content .story {
+  position: relative;
+  width: 567px;
+  height: 794px;
+  margin : 0 0 10px;
+  left: 50%;
+  margin-left: -283.5px;
+}
+
+/* prenext */
+.prenext .btmline {
+  position: relative;
+}
+.prenext .btmline .inner {
+  height: 58px;
+  display: flex;
+}
+.prenext .btmline .inner__left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.prenext .btmline .inner__left .bl1 {
+  width: 35%;
+}
+.prenext .btmline .inner__left .pre {
+  width: 40%;
+  height: 58px;
+  display: flex;
+}
+.prenext .btmline .inner__left .pre .btn_pre .off {
+  position: absolute;
+}
+.prenext .btmline .inner__left .pre .btn_pre .on {
+  position: absolute;
+  opacity: 0;
+}
+.prenext .btmline .inner__left .pre .btn_pre:hover .off {
+  opacity: 0;
+}
+.prenext .btmline .inner__left .pre .btn_pre:hover .on {
+  opacity: 1;
+}
+.prenext .btmline .inner__left .bl2 {
+  width: 25%;
+}
+.prenext .btmline .inner__right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.prenext .btmline .inner__right .bl1 {
+  width: 35%;
+}
+.prenext .btmline .inner__right .next {
+  width: 40%;
+  height: 58px;
+  display: flex;
+}
+.prenext .btmline .inner__right .next .btn_next .off {
+  position: absolute;
+}
+.prenext .btmline .inner__right .next .btn_next .on {
+  position: absolute;
+  opacity: 0;
+}
+.prenext .btmline .inner__right .next .btn_next:hover .off {
+  opacity: 0;
+}
+.prenext .btmline .inner__right .next .btn_next:hover .on {
+  opacity: 1;
+}
+.prenext .btmline .inner__right .bl2 {
+  width: 25%;
+}

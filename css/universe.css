@@ -1,0 +1,95 @@
+.artistnote {
+  background-image: url("../images/universe_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-color: #303a34;
+  /* border: solid pink 3px; */
+}
+.artistnote .inner {
+  margin-top: 130px;
+  padding: 400px 0;
+  /* border: solid red 3px; */
+}
+
+.note .content {
+  background-image: url("../images/universe_bg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  padding: 3px;
+  background-color: #161616;
+  text-align: center;
+  color: #c4b986;
+  /* border: solid tomato 3px; */
+}
+.note .content .button {
+  position: absolute;
+  margin-top: 420px;
+  /* 50px을 빼준건 버튼 길이(200x80)의 50%를 빼준것 */
+  margin-left: calc( 50% - 100px);
+  width: 5%;
+  /* height: 20px; */
+  /* border: solid orange 3px; */
+}
+.note .content .button .btn2 .off {
+  position: absolute;
+}
+.note .content .button .btn2 .on {
+  position: absolute;
+  opacity: 0;
+}
+.note .content .button .btn2:hover .on {
+  opacity: 1;
+  transition : .2s;
+}
+.note .content .button .btn2:hover .off {
+  opacity: 0;
+  transition : 1s;
+}
+
+.note .shortstory {
+  background-image: url("../images/universe_bg3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  padding: 3px;
+  background-color: #161616;
+  text-align: center;
+  text-shadow: #161616 2px 2px 2px;
+  color: #c4b986;
+  border-top: solid #fff8d7 1px;
+  border-bottom: solid #fff8d7 1px;
+}
+.note .shortstory .shorts-content {
+  position: relative;
+  text-align: left;
+  width: 850px;
+  margin : auto;
+}
+.note .shortstory .button {
+  position: absolute;
+  margin-top: 80px;
+  /* 100px을 빼준건 버튼 길이(200x80)의 50%를 빼준것 */
+  margin-left: calc( 50% - 100px);
+  width: 5%;
+  /* height: 20px; */
+  /* border: solid orange 3px; */
+}
+.note .shortstory .button .btn2 .off {
+  position: absolute;
+}
+.note .shortstory .button .btn2 .on {
+  position: absolute;
+  opacity: 0;
+}
+.note .shortstory .button .btn2:hover .on {
+  opacity: 1;
+  transition : .2s;
+}
+.note .shortstory .button .btn2:hover .off {
+  opacity: 0;
+  transition : 1s;
+}

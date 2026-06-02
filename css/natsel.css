@@ -1,0 +1,45 @@
+/* NaturalSelection */
+.NatSel {
+  padding: 100px 0 0 0;
+  background-color: #161515;
+}
+.NatSel .inner {
+  height: 496px;
+}
+.NatSel .main-img {
+  position: absolute;
+  left: 50%;
+  margin-left: -520px;
+}
+.NatSel .choco-txt {
+  position: absolute;
+  left: 170px;
+  top: 400px;
+}
+
+/* Contents */
+.Contents .cat__area{
+  position: relative;
+  height: 3200px;
+  background-color: #161515;
+}
+.Contents .cat__area .cover {
+  position: relative;
+  /* background-color: orange; */
+  top: 100px;
+  margin: 0 750px;
+}
+.Contents .cat__area .cover .story {
+  position: relative;
+  width: 400px;
+  height: 130px;
+  /* background-color: royalblue; */
+  margin : 0 0 10px;
+  left: 50%;
+  margin-left: -200px;
+  opacity: 0.8;
+}
+.Contents .cat__area .cover .story:hover {
+  opacity: 1;
+  transition: 0.3s;
+}

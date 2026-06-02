@@ -1,0 +1,32 @@
+/* Episode */
+.Episode {
+  height: 6850px;
+  background-color: #131313;
+}
+.Episode .Ep__area .id {
+  position: relative;
+  padding-top: 135px;
+} 
+.Episode .Ep__area .works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: tomato; */
+  width: 950px;
+  margin: 200px auto 100px;
+  padding: 45px 0px;
+  font-size: 24px;
+  color: #fff9df;
+  text-align: center;
+  line-height: 36px;
+}
+.Episode .Ep__area .content {
+  position: relative;
+  text-align: left;
+  width: 950px;
+  margin : auto;
+  /* background-color: aquamarine; */
+  font-size: 18px;
+  color: #fff9df;
+  line-height: 28px;
+}

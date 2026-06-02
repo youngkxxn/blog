@@ -1,0 +1,54 @@
+/* Episode */
+.Episode .Ep__area {
+  height: 4900px;
+  background-color: #f6f5f0;
+}
+.Episode .Ep__area .id {
+  position: relative;
+  padding-top: 200px;
+}
+.Episode .Ep__area .Ep__content {
+  position: relative;
+  background-color: #ffffff;
+  width: 567px;
+  margin: 0 auto;
+}
+.Episode .Ep__area .works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: tomato; */
+  max-width: 1980px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 45px 0px;
+}
+.Episode .Ep__area .works .work {
+  /* 작품(work) 크기 800 x 1131px */
+  width: 800px;
+  height: 1131px;
+  overflow: hidden;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  text-align: center;
+}
+.Episode .Ep__area .works .txt {
+  position: absolute;
+  min-width: 800px;
+  margin-left: calc (800 / 2)px;
+  margin-top: 1136px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+  /* border: solid pink 3px; */
+}
+.Episode .content {
+  position: relative;
+  text-align: right;
+  width: 1000px;
+  margin : 0 auto 200px;
+  /* background-color: aquamarine; */
+  /* border: solid purple 3px; */
+  font-size: 16px;
+}

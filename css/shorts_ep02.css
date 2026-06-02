@@ -1,0 +1,28 @@
+/* Episode */
+.Episode .Ep__area {
+  height: 6700px;
+  background-color: #f6f5f0;
+}
+.Episode .Ep__area .id {
+  position: relative;
+  padding-top: 200px;
+  margin: 0 390px;
+  height: 30px;
+  min-width: 547px;
+  text-align: right;
+  background-color: #f6f5f0;
+}
+.Episode .Ep__area .Ep__content {
+  position: relative;
+  background-color: #ffffff;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.Episode .Ep__area .Ep__content .story {
+  position: relative;
+  width: 567px;
+  height: 794px;
+  margin : 0 0 10px;
+  left: 50%;
+  margin-left: -283.5px;
+}
