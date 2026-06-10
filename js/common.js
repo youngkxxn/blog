@@ -66,8 +66,41 @@ document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     if (target) {
       e.preventDefault();
       const headerHeight = document.querySelector('header').offsetHeight;
-      const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight + 120;
+      // 섹션 상단 패딩만큼 내려서 제목이 헤더 바로 아래 오도록 (PC 120px / 모바일 64px)
+      const paddingTop = parseFloat(getComputedStyle(target).paddingTop) || 0;
+      const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight + paddingTop;
       gsap.to(window, { duration: 0.8, scrollTo: targetTop, ease: 'power2.inOut' });
     }
   });
 });
+
+// 모바일 햄버거 메뉴
+const menuToggleEl = document.querySelector('.menu-toggle');
+menuToggleEl.addEventListener('click', function () {
+  const open = document.body.classList.toggle('nav-open');
+  menuToggleEl.setAttribute('aria-expanded', open);
+  menuToggleEl.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+});
+document.querySelectorAll('.mobile-nav a').forEach(function (a) {
+  a.addEventListener('click', function () {
+    document.body.classList.remove('nav-open');
+    menuToggleEl.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// 모바일: 스크롤을 내린 상태에서 뒤로가기 한 번 → 맨 위로 (to-top 버튼 대체)
+if (window.matchMedia('(max-width: 768px)').matches) {
+  let backToTopArmed = false;
+  window.addEventListener('scroll', _.throttle(function () {
+    if (window.scrollY > 500 && !backToTopArmed) {
+      backToTopArmed = true;
+      history.pushState({ backToTop: true }, '');
+    }
+  }, 300));
+  window.addEventListener('popstate', function () {
+    if (backToTopArmed) {
+      backToTopArmed = false;
+      gsap.to(window, .5, { scrollTo: 0 });
+    }
+  });
+}

@@ -91,6 +91,53 @@
   color: #fff;
 }
 
+/* VISUAL — MOBILE */
+@media (max-width: 768px) {
+  .visual {
+    margin-top: 64px;
+  }
+  .visual .inner {
+    height: auto;
+    min-height: calc(100svh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 36px;
+    padding: 56px 24px;
+  }
+  .visual .title {
+    position: static;
+    transform: none;
+  }
+  .visual-gang {
+    font-size: clamp(44px, 13vw, 64px);
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+  }
+  .gang-en {
+    font-size: clamp(52px, 15vw, 76px);
+  }
+  /* 기린은 PC 전용 — 모바일 메인은 토마토 */
+  .visual .GIRIN.image { display: none; }
+  /* 토마토 그림이 700x700 투명 캔버스의 (250,578) 부근 85px 영역에만 있어 크롭 후 확대 */
+  .visual .tomato-wrap {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  .visual .tomato.image {
+    position: absolute;
+    width: 988px;
+    max-width: none;
+    left: -353px;
+    top: -816px;
+  }
+}
+
 /* NOTICE */
 /* .notice {
 
@@ -165,6 +212,22 @@
 }
 .notice .notice-line .inner__right .toggle-promotion .material-icons {
   font-size: 30px;
+}
+
+/* NOTICE — MOBILE */
+@media (max-width: 768px) {
+  .notice .notice-line .inner { height: 54px; }
+  .notice .notice-line .inner__left h2 { font-size: 13px; white-space: nowrap; margin-right: 14px; }
+  .notice .notice-line .inner__left { min-width: 0; }
+  .notice .notice-line .inner__left .swiper { min-width: 0; height: 54px; }
+  .notice .notice-line .inner__left .swiper-slide { height: 54px; left: 0; }
+  .notice .notice-line .inner__left .swiper-slide p {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .notice .notice-line .inner__right { display: none; }
 }
 
 
