@@ -34,23 +34,52 @@
 
     applyHoloEffect(wrapper, modalImg);
 
-    // 닫기: 오버레이 클릭
-    overlay.addEventListener('click', function (e) {
-      if (e.target === overlay) {
-        overlay.classList.remove('active');
-        setTimeout(function () { overlay.remove(); }, 300);
-      }
-    });
+    // 모달이 떠 있는 동안 배경 스크롤 잠금 (닫으면 원래 위치 복원)
+    const lockedScrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = -lockedScrollY + 'px';
+    document.body.style.left = '0';
+    document.body.style.right = '0';
 
-    // ESC 닫기
-    function onKeyDown(e) {
-      if (e.key === 'Escape') {
-        overlay.classList.remove('active');
-        setTimeout(function () { overlay.remove(); }, 300);
-        document.removeEventListener('keydown', onKeyDown);
+    // 뒤로가기로 닫을 수 있도록 히스토리 한 칸 추가
+    history.pushState({ cardModal: true }, '');
+
+    let closed = false;
+    function closeModal(viaBackButton) {
+      if (closed) return;
+      closed = true;
+      overlay.classList.remove('active');
+      setTimeout(function () { overlay.remove(); }, 300);
+      document.removeEventListener('keydown', onKeyDown);
+      window.removeEventListener('popstate', onPop);
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      window.scrollTo(0, lockedScrollY);
+      // 탭/ESC로 닫았으면 위에서 쌓은 히스토리를 소비 (다음 뒤로가기가 정상 동작하도록)
+      if (!viaBackButton) {
+        window.__suppressPop = (window.__suppressPop || 0) + 1;
+        history.back();
       }
     }
+
+    // 닫기: 오버레이 탭/클릭
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeModal(false);
+    });
+
+    // 닫기: ESC
+    function onKeyDown(e) {
+      if (e.key === 'Escape') closeModal(false);
+    }
     document.addEventListener('keydown', onKeyDown);
+
+    // 닫기: 뒤로가기
+    function onPop() {
+      closeModal(true);
+    }
+    window.addEventListener('popstate', onPop);
   }
 
   function applyHoloEffect(card, imgEl) {
