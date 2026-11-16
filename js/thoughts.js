@@ -11,8 +11,8 @@
     '구슬판의 왼쪽 10개 출구만 성공이다. 누군가는 5번, 누군가는 95번 입구에서 시작한다. 높이가 같으면 기회도 공평한 걸까?',
     '5에서 8은 성공, 95에서 30은 실패. 그런데 어느 구슬이 더 멀리 움직였나.',
     '도착한 좌표와 함께 출발한 좌표, 그 사이의 거리도 보고 싶다.',
-    '노력은 성공을 보장하는 게 아니라 확률을 움직이는 것. 공부하고 일하고 만나고 만들어보고, 망하면 또 해본다.',
-    '통장에 안 찍힌다고 없는 자산은 아니다. 사람, 배운 것, 나에 대한 이해가 남을 수 있다.',
+    '노력은 성공을 보장하는 게 아니라 확률을 움직이는 것. 오른쪽에서 왼쪽으로 움직이며 못에 맞을 때마다 아래로 내려오는 구슬. 공부하고 일하고 만나고 만들어보고, 망하면 또 해본다.',
+    '통장에 안 찍힌다고 없는 자산은 아니다. 사람이 남을 수도 있고, 그 일을 하면서 배운 것이나 나에 대한 이해가 남을 수도 있다.',
     '내 아이는 최대한 왼쪽에 놓고 싶다. 다만 네가 잘한 것도 있겠지만 네가 고른 입구는 아니라고 알려주고 싶다.',
     '네가 힘든 건 힘든 게 맞다. 내가 힘든 것과 내가 유리한 자리에 있는 것은 동시에 참일 수 있다.',
     '95에서 출발해 30까지 왔다면 많이 왔다. 성공했다면 조금 겸손하게, 아직이라면 나를 너무 실패라 여기지 않게.',
@@ -21,7 +21,8 @@
   let current = 0;
   let pointerStart = null;
   const directory = image.src.slice(0, image.src.lastIndexOf('/') + 1);
-  const imagePath = index => `${directory}${String(index + 1).padStart(2, '0')}.webp`;
+  const versionQuery = new URL(image.src).search;
+  const imagePath = index => `${directory}${String(index + 1).padStart(2, '0')}.webp${versionQuery}`;
 
   function render() {
     image.src = imagePath(current);

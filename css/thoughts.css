@@ -1,4 +1,4 @@
-/* 영권의 생각: homepage entry and self-contained reading page. */
+/* 작가노트: homepage entry and self-contained reading page. */
 header .main-menu .item.item--thought .item__name {
   display: block;
   color: #2c2a29;
@@ -25,7 +25,6 @@ header .main-menu .item.item--thought:hover .item__name {
 .thought-feature__image { display: block; }
 .thought-feature__image img { width: 100%; height: auto; }
 .thought-feature__eyebrow { margin-bottom: 8px; font-size: 15px; font-weight: 700; }
-.thought-feature__lineage { margin-bottom: 30px; color: #6b6055; font-size: 13px; }
 .thought-feature h2 {
   margin: 0 0 28px;
   font-family: 'Noto Serif KR', serif;
@@ -89,7 +88,6 @@ header .main-menu .item.item--thought:hover .item__name {
 @media (max-width: 768px) {
   .thought-feature { padding: 48px 24px; }
   .thought-feature__inner { max-width: 520px; grid-template-columns: 1fr; gap: 28px; }
-  .thought-feature__lineage { margin-bottom: 18px; }
   .thought-feature h2 { font-size: 26px; line-height: 1.7; margin-bottom: 20px; }
   .thought-feature__excerpt { font-size: 17px; margin-bottom: 20px; }
   .thought-page .thought-header { padding: 20px 24px; }
