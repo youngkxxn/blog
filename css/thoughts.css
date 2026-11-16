@@ -1,0 +1,105 @@
+/* 영권의 생각: homepage entry and self-contained reading page. */
+header .main-menu .item.item--thought .item__name {
+  display: block;
+  color: #2c2a29;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 23px;
+  line-height: 1.4;
+}
+header .main-menu .item.item--thought:hover .item__name {
+  color: #c7f4da;
+}
+.thought-feature {
+  padding: 88px 24px;
+  background: #ebe3d6;
+  color: #2b2b2b;
+}
+.thought-feature__inner {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 430px) minmax(0, 1fr);
+  align-items: center;
+  gap: 72px;
+}
+.thought-feature__image { display: block; }
+.thought-feature__image img { width: 100%; height: auto; }
+.thought-feature__eyebrow { margin-bottom: 8px; font-size: 15px; font-weight: 700; }
+.thought-feature__lineage { margin-bottom: 30px; color: #6b6055; font-size: 13px; }
+.thought-feature h2 {
+  margin: 0 0 28px;
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(25px, 2.4vw, 34px);
+  line-height: 1.8;
+  font-weight: 700;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.thought-feature__excerpt { margin: 0 0 32px; color: #514a43; font-size: 18px; line-height: 1.9; }
+.thought-feature__link { display: inline-flex; align-items: center; gap: 24px; padding: 12px 0; color: #2b2b2b; border-bottom: 1px solid #807363; font-size: 16px; }
+.thought-feature__image:focus-visible, .thought-feature__link:focus-visible { outline: 3px solid #a84629; outline-offset: 5px; }
+
+.thought-page {
+  margin: 0;
+  color: #2b2b2b;
+  background: #f6f5f0;
+  font-family: 'Gowun Dodum', 'Malgun Gothic', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.thought-page *, .thought-page *::before, .thought-page *::after { box-sizing: border-box; }
+.thought-page a { color: inherit; text-underline-offset: .22em; }
+.thought-page a:focus-visible, .thought-page button:focus-visible { outline: 3px solid #a84629; outline-offset: 5px; }
+.thought-page .thought-header {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 26px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #d8d0c4;
+}
+.thought-page .thought-brand { color: #2b2b2b; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 23px; text-decoration: none; }
+.thought-page .thought-home { font-size: 14px; text-decoration: none; }
+.thought-page .thought-hero { max-width: 900px; margin: 0 auto; padding: 74px 28px 40px; }
+.thought-page .thought-kicker { margin: 0 0 16px; color: #6b6055; font-size: 14px; letter-spacing: .08em; }
+.thought-page .thought-hero h1 { margin: 0; font-family: 'Noto Serif KR', serif; font-size: clamp(30px, 4.6vw, 52px); font-weight: 700; line-height: 1.65; word-break: keep-all; overflow-wrap: anywhere; }
+.thought-page .thought-intro { margin: 26px 0 0; max-width: 650px; color: #655a4e; font-size: 18px; line-height: 1.9; word-break: keep-all; }
+.thought-page .thought-jumps { display: flex; flex-wrap: wrap; gap: 24px; margin: 26px 0 0; font-size: 15px; }
+.thought-page .thought-jumps a { padding: 10px 0; }
+.thought-page .thought-gallery { width: min(100% - 40px, 720px); margin: 0 auto; scroll-margin-top: 24px; }
+.thought-page .thought-gallery__image { display: block; width: 100%; height: auto; aspect-ratio: 1; background: #ebe3d6; touch-action: pan-y; }
+.thought-page .thought-gallery__controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 18px; }
+.thought-page .thought-gallery__controls button { min-width: 76px; min-height: 44px; padding: 10px 18px; color: #2b2b2b; background: transparent; border: 1px solid #b6ab9c; border-radius: 3px; font: inherit; font-size: 15px; cursor: pointer; }
+.thought-page .thought-gallery__controls button:hover:not(:disabled) { background: #ebe3d6; }
+.thought-page .thought-gallery__controls button:disabled { opacity: .35; cursor: default; }
+.thought-page .thought-gallery__count { font-size: 15px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.thought-page .thought-gallery__credit { margin: 18px 0 0; color: #766b5e; font-size: 12px; line-height: 1.8; }
+.thought-page .thought-text { width: min(100% - 48px, 680px); margin: 88px auto 0; scroll-margin-top: 32px; }
+.thought-page .thought-section-label { margin: 0 0 34px; padding-bottom: 18px; border-bottom: 1px solid #d8d0c4; color: #6b6055; font-size: 14px; font-weight: 400; }
+.thought-page .thought-prose { font-size: 20px; line-height: 2; word-break: keep-all; overflow-wrap: anywhere; }
+.thought-page .thought-prose p { margin: 0 0 1.2em; }
+.thought-page .thought-prose hr { width: 52px; margin: 52px 0; border: 0; border-top: 1px solid #a89b89; }
+.thought-page .thought-source { width: min(100% - 48px, 680px); margin: 72px auto 0; padding-top: 28px; border-top: 1px solid #d8d0c4; color: #6b6055; font-size: 13px; line-height: 1.9; overflow-wrap: anywhere; }
+.thought-page .thought-source h2 { margin: 0 0 12px; color: #514a43; font-size: 14px; font-weight: 700; }
+.thought-page .thought-source p { margin: 0 0 10px; }
+.thought-page .thought-footer { width: min(100% - 48px, 680px); margin: 72px auto 0; padding: 28px 0 52px; border-top: 1px solid #d8d0c4; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; color: #6b6055; font-size: 14px; }
+.thought-page .thought-footer a { padding: 10px 0; }
+@media (max-width: 768px) {
+  .thought-feature { padding: 48px 24px; }
+  .thought-feature__inner { max-width: 520px; grid-template-columns: 1fr; gap: 28px; }
+  .thought-feature__lineage { margin-bottom: 18px; }
+  .thought-feature h2 { font-size: 26px; line-height: 1.7; margin-bottom: 20px; }
+  .thought-feature__excerpt { font-size: 17px; margin-bottom: 20px; }
+  .thought-page .thought-header { padding: 20px 24px; }
+  .thought-page .thought-hero { padding: 44px 24px 30px; }
+  .thought-page .thought-hero h1 { font-size: clamp(28px, 5.6vw, 38px); }
+  .thought-page .thought-intro { font-size: 17px; }
+  .thought-page .thought-gallery { width: calc(100% - 32px); }
+  .thought-page .thought-text { margin-top: 60px; }
+  .thought-page .thought-prose { font-size: 18px; line-height: 1.95; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .thought-page { scroll-behavior: smooth; }
+}
