@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개인정보처리 안내 · 영권 유튜브 게시 도구</title>
+  <meta name="description" content="Youngkxxn YouTube Publisher의 Google 데이터 접근 목적, 로컬 보관, 연결 해제 및 삭제 방법을 안내합니다.">
+  <link rel="canonical" href="https://youngkxxn.com/tools/youtube-publisher/privacy/">
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="/tools/youtube-publisher/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="header">
+    <a class="brand" href="/">youngkxxn</a>
+    <nav aria-label="도구 안내"><a href="/tools/youtube-publisher/">도구 소개</a><a href="/tools/youtube-publisher/terms/">이용 안내</a></nav>
+  </header>
+  <main id="main">
+    <div class="hero">
+      <p class="eyebrow">Youngkxxn YouTube Publisher</p>
+      <h1>개인정보처리 안내</h1>
+      <p class="lead">영권 채널 운영자가 사용하는 로컬 게시 도구의 Google 데이터 처리 방식을 설명합니다.</p>
+      <p class="date">시행일 · 최종 수정일: 2026년 11월 16일</p>
+    </div>
+    <div class="prose">
+      <aside class="notice" aria-label="안내 범위"><p>이 안내는 <strong>Youngkxxn YouTube Publisher</strong>의 계정 연결과 게시 기능에 적용됩니다. 영권 홈페이지 전체의 방문 정보 처리나, 별도로 사용하는 Google·브라우저·AI 제품의 데이터 처리방침을 대신하지 않습니다.</p></aside>
+      <section aria-labelledby="scope">
+        <h2 id="scope">1. 사용 대상과 접근하는 정보</h2>
+        <p>이 도구는 영권 채널 운영자 본인용이며 일반 사용자의 가입을 받지 않습니다. Google OAuth에서 승인한 다음 범위만 요청합니다.</p>
+        <dl class="scope-list">
+          <div><dt><code>https://www.googleapis.com/auth/youtube.upload</code></dt><dd>운영자가 선택한 영상 파일과 제목·본문·공개 상태 등 게시 설정을 Google에 전송합니다.</dd></div>
+          <div><dt><code>https://www.googleapis.com/auth/youtube.readonly</code></dt><dd>연결된 채널 이름·ID를 확인하고, 도구가 업로드한 동영상의 처리·공개 상태를 조회합니다.</dd></div>
+        </dl>
+        <p>반복 실행을 위한 OAuth 액세스 토큰·갱신 토큰과 전송 중단 후 재개를 위한 업로드 세션 주소를 처리합니다. Google 계정 비밀번호는 도구가 받거나 저장하지 않습니다.</p>
+      </section>
+      <section aria-labelledby="purpose">
+        <h2 id="purpose">2. 이용 목적</h2>
+        <ul>
+          <li>운영자가 승인한 영상 게시 작업을 수행합니다.</li>
+          <li>인증된 채널이 정확한 영권 채널인지 확인합니다.</li>
+          <li>업로드를 이어 전송하고 처리 결과를 확인합니다.</li>
+          <li>파일 해시와 게시 결과를 비교해 같은 작업의 중복 업로드를 방지합니다.</li>
+        </ul>
+        <p>Google 계정에서 얻은 데이터는 위 기능을 위해서만 사용합니다. 이 게시 도구는 해당 데이터를 광고, 판매, 별도 분석 서비스 또는 AI 모델 학습에 사용하지 않습니다.</p>
+      </section>
+      <section aria-labelledby="storage">
+        <h2 id="storage">3. 저장 위치와 보관 기간</h2>
+        <p>인증 토큰과 업로드 재개 주소는 운영자 PC의 <strong>Windows 자격 증명 관리자</strong>에 저장합니다. 도구의 자격 증명 이름 공간은 <code>youngkxxn.youtube-publish.v1</code>입니다. 토큰을 공개 홈페이지나 프로젝트의 일반 작업 파일에 저장하지 않습니다.</p>
+        <p>입력 영상·이미지·본문·작업 JSON, 파일 해시와 진행 상태, 완료된 동영상·게시물 주소는 운영자가 관리하는 로컬 폴더에 남습니다. 업로드 완료 시 도구는 해당 업로드 재개 주소를 자격 증명 관리자에서 삭제하도록 시도합니다.</p>
+        <p>OAuth 갱신 토큰은 연결을 유지하는 동안 보관합니다. 작업 파일과 결과 기록은 운영자가 삭제할 때까지 보관하며 자동 만료 기능은 없습니다. 작업 폴더를 별도 백업·동기화하는 경우 그 사본은 운영자가 함께 관리해야 합니다.</p>
+      </section>
+      <section aria-labelledby="sharing">
+        <h2 id="sharing">4. 전송과 공유</h2>
+        <p>영상 게시와 인증에 필요한 데이터는 Google의 OAuth 및 YouTube API로 전송됩니다. 업로드한 영상과 메타데이터의 Google 내 보관·공개는 YouTube 설정과 Google의 정책에 따릅니다.</p>
+        <p>도구 자체는 Google 계정 데이터를 수집하는 별도 서버를 운영하지 않으며, 이를 제3자에게 제공하거나 판매하지 않습니다. 운영자가 작업을 요청하는 AI 제품이나 브라우저 등의 처리 방식에는 각 제품의 약관·개인정보 설정이 별도로 적용됩니다.</p>
+        <p>이 도구에서 Google API를 통해 받은 정보의 사용 및 다른 앱으로의 전송은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>과 그 정책의 제한적 사용(Limited Use) 요건을 준수합니다.</p>
+      </section>
+      <section aria-labelledby="delete">
+        <h2 id="delete">5. 연결 해제와 로컬 데이터 삭제</h2>
+        <ol>
+          <li><a href="https://myaccount.google.com/connections">Google 계정의 서드 파티 연결 관리</a>에서 이 앱의 연결을 선택하고 액세스 권한을 취소합니다.</li>
+          <li>Windows의 <strong>자격 증명 관리자 → Windows 자격 증명</strong>에서 <code>youngkxxn.youtube-publish.v1</code>에 해당하는 OAuth 및 업로드 세션 항목을 삭제합니다.</li>
+          <li>필요하지 않은 로컬 입력 파일, 작업 JSON, 게시 패키지와 <code>*.receipt.json</code> 등 결과 기록 및 백업 사본을 삭제합니다.</li>
+        </ol>
+        <p>연결 해제는 이후 API 접근을 중단하는 절차입니다. 이미 YouTube에 올라간 영상이나 게시물은 자동 삭제되지 않으므로 필요한 경우 YouTube Studio 등에서 별도로 관리합니다.</p>
+      </section>
+      <section aria-labelledby="contact">
+        <h2 id="contact">6. 문의와 변경 안내</h2>
+        <p>운영·개인정보 관련 문의: 영권 · <a href="mailto:youngkxxn@gmail.com">youngkxxn@gmail.com</a></p>
+        <p>도구의 데이터 처리 방식이 바뀌면 이 페이지의 내용과 최종 수정일을 갱신합니다.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <span>© 2026 youngkxxn · 영권 유튜브 게시 도구</span>
+    <nav aria-label="하단 메뉴"><a href="/tools/youtube-publisher/">도구 소개</a><a href="/tools/youtube-publisher/terms/">이용 안내</a><a href="/">영권 홈페이지</a></nav>
+  </footer>
+</body>
+</html>
